@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            ~ function(){
+                function computed(){
+                    var pcWidth=document.documentElement.clientWidth
+                    var des=750;
+                    if(pcWidth>750){
+                        document.documentElement.style.fontSize="100px";
+                        return ;
+                    }
+                    document.documentElement.style.fontSize=pcWidth/des*100+"px";
+                }
+                computed()
+        
+            }();
+    </script>
+        
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ol,ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        height: 1rem;
+        line-height: 1rem;
+        width:20%;
+        font-size: 0.32rem;
+        text-align: center;
+        color: black;
+        float: left;
+    }
+    .xiahuaxian{
+        border-bottom: 2px solid darkblue;
+        color:darkblue;
+        font-weight: bold;
+    }
+    nav{
+        background:  darkgoldenrod;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+       
+        
+    }
+    .clearfix::after{
+           display:block;
+           content:"";
+            font-size:0;
+           height:0;
+           clear: both;
+           visibility: hidden;
+        } 
+    .banner{
+        height: 4.2rem;
+        background: url("img/banner.gif") center center no-repeat;
+        background-size: cover;
+        margin-top: 1rem;
+    }
+    main{
+        padding: 0.2rem 0.4rem;
+        background: lightgoldenrodyellow;
+      
+        
+    }
+    .lists img{
+        width:3rem;
+        float: left;
+        /* background-size:cover; */
+    } 
+    .lists p{
+        float: right;
+        font-size: 0.32rem;
+        width: 3.2rem;
+        line-height: 0.6rem;
+    }                   
+    .lists li{
+       margin-bottom: 0.4rem;
+    }
+    footer{
+        background: darkgoldenrod;
+        height: 1rem;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+    footer img{
+        width: 0.8rem;
+        display:block;
+        margin: 0.1rem auto;
+    }
+</style>                        
+<body>
+<header>
+    <nav class="clearfix"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ">
+        <a class="xiahuaxian" href="">推荐</a>                                                      
+        <a href="">视频</a>
+        <a href="">热点</a>
+        <a href="">小说</a>
+        <a href="">娱乐</a>
+    </nav>
+    <section class="banner"></section>
+    
+</header>
+    <main>
+        <ul class="lists">
+            <li class="clearfix">
+                <img src="img/new.jpg" alt="">
+                 <p>城市绿道：迈向幸福的康庄大道，迈向幸福的康庄大道。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/new.jpg" alt="">
+                 <p>城市绿道：迈向幸福的康庄大道，迈向幸福的康庄大道。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/new.jpg" alt="">
+                 <p>城市绿道：迈向幸福的康庄大道，迈向幸福的康庄大道。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/new.jpg" alt="">
+                 <p>城市绿道：迈向幸福的康庄大道，迈向幸福的康庄大道。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/new.jpg" alt="">
+                 <p>城市绿道：迈向幸福的康庄大道，迈向幸福的康庄大道。</p>
+            </li>
+            
+            
+        </ul>
+    </main>
+    <footer>
+        <img src="img/host.png" alt="">
+    </footer>
+</body>
+</html>
